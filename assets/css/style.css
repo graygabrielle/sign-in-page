@@ -5,13 +5,17 @@ html {
     overflow: hidden;
 }
 
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 3px;
+}
 
 /* center box */
 .main {
-    background-color: whitesmoke;
     position: relative;
     margin: 15% 15% 0 15%;
     text-align: center;
+    border-radius: 10;
     /* display: grid;
     align-items: center;
     justify-items: center;
@@ -22,18 +26,78 @@ html {
        */
 }
 
+.center::after {
+    content: "";
+    background: white;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
 .header {
   /* grid-area: header; */
   text-align: center;
   width: 100%;
   position: relative;
-  background-color: #3e5c6a;
+  background-color: #ffcc4b;
   height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 
+}
+
+/* .icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+} */
+
+.logo {
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.logo::before {
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    content: "\f72e";
+    display: block;
+    background: #75ccf5; 
+    opacity: 0.85;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    padding: 20px;
+    top: -15px;
+    left: 20px;
+    
+}
+
+
+.logo::after {
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    font-size: .75em;
+    content: "\f00d";
+    display: block;
+    background: #ffdb81; 
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    padding: 10px 15px;
+    top: 18px;
+    right: 20px;
+    
 }
 
 form {
@@ -85,4 +149,19 @@ i {
 .twitter {
     background-color: #38A1F3;
     width: 100%;
+}
+
+.fb-message, .twitter-message {
+    text-transform: uppercase;
+    color: white;
+}
+
+#submit {
+    background-color: #ffdb81;
+    font-size: 2em;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 3px;
+    padding: 10px 30px 15px 30px;
+    border-radius: 20%/50%;
 }
