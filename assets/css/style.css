@@ -13,7 +13,7 @@ body {
 /* center box */
 .main {
     position: relative;
-    margin: 15% 15% 0 15%;
+    margin: 5% 15% 0 15%;
     text-align: center;
     border-radius: 10;
     /* display: grid;
@@ -115,9 +115,17 @@ form .first-row {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 30px auto;
 
 
+}
+
+.first-col > div {
+    padding: 10px;
+}
+
+.second-col > div {
+    padding: 10px;
 }
 
 .footer {
@@ -164,4 +172,6 @@ i {
     letter-spacing: 3px;
     padding: 10px 30px 15px 30px;
     border-radius: 20%/50%;
+    margin: 10px;
+    margin-top: 50px;
 }
