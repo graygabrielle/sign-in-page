@@ -54,7 +54,7 @@ input {
 
 select {
     position: relative;
-    left: -23%;
+    /* left: -23%; */
     font-family: 'Open Sans Condensed', sans-serif;
     transform: scale(1, .85);
     background: white;
@@ -160,7 +160,7 @@ form .first-row {
 }
 
 .first-col, .second-col {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     margin: 30px auto;
@@ -236,11 +236,15 @@ i {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding: 10px 30px 15px 30px;
+    padding: 20px 30px;
     border-radius: 20%/50%;
     margin: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     transform: scale(1, .85);
+    text-align: center;
+    width: initial;
+    border: none;
+
 }
 
 h4, h2 {
