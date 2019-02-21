@@ -1,12 +1,14 @@
 html {
-    background: url("../img/mountain-landscape.jpg") no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
+    
+
 }
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;
+    background: url("../img/mountain-landscape.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
     letter-spacing: 3px;
     width: 100%;
 }
